@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         <div>
           <p className="font-heading font-bold text-background-50 text-lg mb-2">WHSS</p>
-          <p className="text-sm">Windsor Home Security Solutions — a fictional company created for a university MIS project.</p>
+          <p className="text-sm">Windsor Home Security Solutions — locally owned protection for families and businesses across Windsor-Essex.</p>
         </div>
         <div>
           <p className="font-semibold text-background-50 mb-3">Explore</p>
@@ -14,15 +14,15 @@ export default function Footer() {
             <li><Link to="/services" className="hover:text-accent-300">Services</Link></li>
             <li><Link to="/packages" className="hover:text-accent-300">Security Packages</Link></li>
             <li><Link to="/quote" className="hover:text-accent-300">Request a Quote</Link></li>
-            <li><Link to="/admin" className="hover:text-accent-300">MIS Dashboard (Admin)</Link></li>
+            <li><Link to="/admin" className="hover:text-accent-300">Staff Portal</Link></li>
           </ul>
         </div>
         <div>
-          <p className="font-semibold text-background-50 mb-3">Contact (fictional)</p>
+          <p className="font-semibold text-background-50 mb-3">Contact</p>
           <ul className="space-y-2 text-sm">
-            <li>1200 Ouellette Ave, Windsor, ON</li>
-            <li><a href="tel:+15195550100" className="hover:text-accent-300">(519) 555-0100</a></li>
-            <li><a href="mailto:hello@whss.example" className="hover:text-accent-300">hello@whss.example</a></li>
+            <li>401 Sunset Avenue, Windsor, ON</li>
+            <li><a href="tel:+15196999477" className="hover:text-accent-300">519-699-WHSS</a></li>
+            <li><a href="mailto:inquire@whss.com" className="hover:text-accent-300">Inquire@whss.com</a></li>
           </ul>
         </div>
         <div>
@@ -32,8 +32,8 @@ export default function Footer() {
         </div>
       </div>
       <div className="border-t border-primary-800 px-4 md:px-6 py-4 flex flex-col sm:flex-row justify-between gap-2 text-xs text-foreground-300 max-w-7xl mx-auto">
-        <span>© 2026 WHSS (fictional). All prices are example pricing only.</span>
-        <span>University MIS Project Prototype</span>
+        <span>© 2026 WHSS — Windsor Home Security Solutions. All rights reserved.</span>
+        <span>Proudly serving Windsor-Essex, Ontario</span>
       </div>
     </footer>
   );

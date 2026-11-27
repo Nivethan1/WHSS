@@ -22,9 +22,9 @@ export default function Quote() {
           <div className="bg-primary-900 text-background-50 rounded-2xl p-6">
             <h2 className="text-xl font-bold mb-4">Contact WHSS</h2>
             <ul className="space-y-3 text-sm">
-              <li className="flex gap-3"><i className="ri-phone-line text-accent-300" /><a href="tel:+15195550100" className="hover:text-accent-200">(519) 555-0100</a></li>
-              <li className="flex gap-3"><i className="ri-mail-line text-accent-300" /><a href="mailto:hello@whss.example" className="hover:text-accent-200">hello@whss.example</a></li>
-              <li className="flex gap-3"><i className="ri-map-pin-line text-accent-300" />1200 Ouellette Ave, Windsor, ON (fictional)</li>
+              <li className="flex gap-3"><i className="ri-phone-line text-accent-300" /><a href="tel:+15196999477" className="hover:text-accent-200">519-699-WHSS</a></li>
+              <li className="flex gap-3"><i className="ri-mail-line text-accent-300" /><a href="mailto:inquire@whss.com" className="hover:text-accent-200">Inquire@whss.com</a></li>
+              <li className="flex gap-3"><i className="ri-map-pin-line text-accent-300" />401 Sunset Avenue, Windsor, ON</li>
               <li className="flex gap-3"><i className="ri-time-line text-accent-300" />Mon–Sat, 8am–8pm</li>
             </ul>
           </div>

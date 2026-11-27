@@ -106,7 +106,7 @@ export default function QuoteForm({ initialPackage }: { initialPackage: string }
             <label key={p.name} className={`min-w-0 cursor-pointer rounded-lg border-2 p-3 transition ${pkg === p.name ? 'border-accent-500 bg-accent-50' : 'border-background-200 hover:border-accent-300'}`}>
               <input type="radio" name="package" value={p.name} checked={pkg === p.name} onChange={() => setPkg(p.name)} className="sr-only" />
               <span className="flex items-center justify-between font-bold text-primary-900">{p.name}{pkg === p.name && <i className="ri-checkbox-circle-fill text-accent-600" />}</span>
-              <span className="text-sm text-foreground-600">${p.price}/mo (example)</span>
+              <span className="text-sm text-foreground-600">${p.price}/mo</span>
             </label>
           ))}
         </div>
@@ -123,7 +123,7 @@ export default function QuoteForm({ initialPackage }: { initialPackage: string }
       <button type="submit" disabled={submitting} className="w-full py-3 rounded-md bg-primary-700 text-background-50 font-bold whitespace-nowrap hover:bg-primary-800 disabled:opacity-60 cursor-pointer">
         {submitting ? 'Submitting...' : 'Submit Quote Request'}
       </button>
-      <p className="text-xs text-foreground-500 text-center">* Required fields. Fictional company — your data is used for demonstration only.</p>
+      <p className="text-xs text-foreground-500 text-center">* Required fields. Your details are only used to prepare your quote — we never share them.</p>
     </form>
   );
 }

@@ -11,7 +11,7 @@ export default function Packages() {
     <Layout>
       <PageHeader eyebrow="Security Packages" title="Choose the right level of protection" text="Three simple monthly plans. Select a package to carry it straight into your free quote request." />
       <div className="max-w-7xl mx-auto px-4 md:px-6 py-14">
-        <p className="mb-8 text-sm bg-accent-50 border border-accent-200 text-accent-900 rounded-lg px-4 py-3"><i className="ri-information-line mr-1" />Example pricing for a fictional company (university MIS project). Not a real offer.</p>
+        <p className="mb-8 text-sm bg-accent-50 border border-accent-200 text-accent-900 rounded-lg px-4 py-3"><i className="ri-information-line mr-1" />Every plan includes professional installation, the WHSS mobile app and 24/7 monitoring. Monthly price, no hidden fees.</p>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {packages.map((p) => (
             <div key={p.name} className={`relative rounded-2xl p-6 md:p-8 flex flex-col border ${p.highlight ? 'bg-primary-900 text-background-50 border-primary-900 shadow-2xl md:-translate-y-3' : 'bg-background-50 border-background-200'}`}>

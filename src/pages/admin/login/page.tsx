@@ -32,7 +32,7 @@ export default function AdminLogin() {
         <form onSubmit={onSubmit} className="w-full max-w-md bg-background-50 rounded-2xl shadow-lg border border-background-200 p-8 space-y-5">
           <div className="text-center">
             <span className="w-14 h-14 mx-auto flex items-center justify-center rounded-xl bg-primary-800 text-accent-300 mb-3"><i className="ri-lock-2-line text-2xl" /></span>
-            <h1 className="text-2xl font-bold text-primary-900">MIS Dashboard Login</h1>
+            <h1 className="text-2xl font-bold text-primary-900">Staff Sign In</h1>
             <p className="text-sm text-foreground-600 mt-1">Authorized WHSS staff only</p>
           </div>
           <div>

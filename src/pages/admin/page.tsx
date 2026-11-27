@@ -49,8 +49,8 @@ export default function AdminDashboard() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-8 space-y-6">
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
             <div>
-              <p className="text-accent-700 font-semibold text-sm uppercase tracking-wider">Management Information System</p>
-              <h1 className="text-2xl md:text-3xl font-bold text-primary-900">WHSS MIS Dashboard</h1>
+              <p className="text-accent-700 font-semibold text-sm uppercase tracking-wider">Operations</p>
+              <h1 className="text-2xl md:text-3xl font-bold text-primary-900">WHSS Operations Dashboard</h1>
               <p className="text-sm text-foreground-600">Signed in as {session.user.email}</p>
             </div>
             <div className="flex gap-3">

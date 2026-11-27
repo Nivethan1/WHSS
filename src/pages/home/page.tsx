@@ -2,12 +2,12 @@ import { Link } from 'react-router-dom';
 import Layout from '@/components/feature/Layout';
 import { services } from '@/mocks/siteContent';
 
-const misSteps = [
-  { icon: 'ri-file-list-3-line', title: 'Data Collection', text: 'Online quote forms capture customer, property and package details.' },
-  { icon: 'ri-database-2-line', title: 'Data Storage', text: 'Every request is stored securely in a central cloud database.' },
-  { icon: 'ri-cpu-line', title: 'Information Processing', text: 'Requests are counted, grouped and summarised automatically.' },
-  { icon: 'ri-user-heart-line', title: 'CRM & Workflow', text: 'Staff move each inquiry through New → In Progress → Completed.' },
-  { icon: 'ri-bar-chart-box-line', title: 'Decision Support', text: 'Dashboards reveal popular packages and workload to guide decisions.' },
+const journeySteps = [
+  { icon: 'ri-file-list-3-line', title: 'Tell us about your home', text: 'Share a few details online in under two minutes — property type, entry points and what matters most to you.' },
+  { icon: 'ri-user-voice-line', title: 'Talk to a specialist', text: 'A local advisor reviews your details and calls back with a recommendation built around your home.' },
+  { icon: 'ri-tools-line', title: 'Professional installation', text: 'Certified technicians fit and test your system, usually within the same week.' },
+  { icon: 'ri-smartphone-line', title: 'Live in your app', text: 'Arm, disarm and watch your cameras from anywhere, with our monitoring team behind you.' },
+  { icon: 'ri-shield-star-line', title: 'Ongoing support', text: 'Maintenance, updates and a real person on the line whenever you need one.' },
 ];
 
 export default function Home() {
@@ -73,11 +73,11 @@ export default function Home() {
 
       <section className="bg-primary-900 text-background-50 py-16 md:py-20">
         <div className="max-w-7xl mx-auto px-4 md:px-6">
-          <p className="text-accent-300 font-semibold uppercase tracking-wider text-sm mb-2">Information Systems at WHSS</p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 max-w-3xl">How our information system improves service and decisions</h2>
-          <p className="text-foreground-200 max-w-3xl mb-10">Each quote request flows through a simple MIS pipeline. Customers get faster replies, staff never lose a lead, and managers see real-time data on demand and workload.</p>
+          <p className="text-accent-300 font-semibold uppercase tracking-wider text-sm mb-2">How It Works</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 max-w-3xl">From first call to a protected home in under a week</h2>
+          <p className="text-foreground-200 max-w-3xl mb-10">No call centres, no pressure and no long contracts. Here is exactly what happens after you request a quote.</p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-            {misSteps.map((m, i) => (
+            {journeySteps.map((m, i) => (
               <div key={m.title} className="bg-primary-800 rounded-xl p-5 border border-primary-700">
                 <div className="flex items-center justify-between mb-3">
                   <span className="w-10 h-10 flex items-center justify-center rounded-lg bg-accent-500 text-primary-950"><i className={`${m.icon} text-xl`} /></span>
@@ -93,7 +93,7 @@ export default function Home() {
 
       <section className="max-w-7xl mx-auto px-4 md:px-6 py-16 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-primary-900 mb-3">Ready to protect your home?</h2>
-        <p className="text-foreground-600 mb-6">Compare our example packages or request a free, no-obligation quote.</p>
+        <p className="text-foreground-600 mb-6">Compare our packages or request a free, no-obligation quote.</p>
         <div className="flex flex-col sm:flex-row gap-3 justify-center">
           <Link to="/packages" className="px-6 py-3 rounded-md border-2 border-primary-700 text-primary-700 font-bold whitespace-nowrap hover:bg-primary-50 cursor-pointer">Compare Packages</Link>
           <Link to="/quote" className="px-6 py-3 rounded-md bg-primary-700 text-background-50 font-bold whitespace-nowrap hover:bg-primary-800 cursor-pointer">Get a Free Quote</Link>

@@ -1,32 +1,35 @@
 # WHSS – Windsor Home Security Solutions
 
-A fictional home security company website built as a **Management Information Systems (MIS) prototype**.
-All company details, prices and customer records are fictional and used for demonstration only.
+Website for WHSS, a Windsor-based home security company offering cameras, smart alarms, smart locks,
+24/7 professional monitoring, and installation and maintenance.
 
-## What the site demonstrates
+Visitors can browse services and packages, request a free quote, and staff can sign in to an operations
+dashboard to manage incoming requests.
 
-The site is built around a complete information flow:
+## How the site works
 
-1. **Data collection** – a customer chooses a package, then submits a quote request with name, email,
+The whole experience is built around one flow:
+
+1. **Lead capture** – a customer chooses a package, then submits a quote request with name, email,
    phone, property type and requirements.
-2. **Data storage** – each request is saved to a database (`quote_requests`), not to the browser.
-3. **Information processing** – the dashboard aggregates the stored records into totals, status counts
-   and package popularity.
-4. **CRM** – staff open a request, add internal notes and move it through the service pipeline.
+2. **Records** – each request is saved to the backend database (`quote_requests`), not to the browser.
+3. **Reporting** – the dashboard aggregates stored requests into totals, status counts and package
+   popularity.
+4. **Customer history** – staff open a request, see contact details and move it through the pipeline.
 5. **Workflow** – every request follows a status path: New → In Progress → Completed.
-6. **Decision support** – the dashboard surfaces the most popular package, the value of open and won
-   work, and automatic recommendations based on current demand.
+6. **Decision support** – the dashboard surfaces the most requested package, the value of open and won
+   work, and recommendations based on current demand.
 
 ## Pages
 
 | Route | Purpose |
 |---|---|
-| `/` | Company introduction, mission, featured solutions, MIS overview |
+| `/` | Company introduction, mission, featured solutions, how it works |
 | `/services` | Cameras, smart alarms, smart locks, 24/7 monitoring, installation and maintenance |
-| `/packages` | Basic $29.99, Standard $49.99, Premium $79.99 per month (example pricing) |
+| `/packages` | Basic $29.99, Standard $49.99, Premium $79.99 per month |
 | `/quote` | Validated quote request form; accepts `?package=Basic\|Standard\|Premium` |
 | `/admin/login` | Staff sign-in |
-| `/admin` | MIS dashboard (protected – requires a signed-in staff account) |
+| `/admin` | Operations dashboard (protected – requires a signed-in staff account) |
 
 ## Running locally
 
@@ -61,7 +64,7 @@ Notes:
 - If you publish to a `username.github.io` repository instead, the base path resolves to `/`
   automatically.
 
-## MIS dashboard access
+## Staff access
 
 There is deliberately no public sign-up page. Create a staff account in the backend authentication
 panel, then sign in at `/admin/login`.

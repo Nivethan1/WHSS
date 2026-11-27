@@ -6,7 +6,7 @@ const links = [
   { to: '/services', label: 'Services' },
   { to: '/packages', label: 'Packages' },
   { to: '/quote', label: 'Contact / Quote' },
-  { to: '/admin', label: 'MIS Dashboard' },
+  { to: '/admin', label: 'Staff Portal' },
 ];
 
 export default function Navbar() {

@@ -13,12 +13,12 @@ export default function MisInsights({ quotes }: { quotes: QuoteRequest[] }) {
   ].filter(Boolean);
 
   const concepts = [
-    ['Data Collection', 'Quote form captures structured customer data.'],
-    ['Data Storage', 'Central cloud database (quote_requests table).'],
-    ['Information Processing', 'Counts, percentages and value totals computed live.'],
-    ['CRM', 'Customer history, contact details and notes in one view.'],
-    ['Business Workflow', 'Status pipeline: New → In Progress → Completed.'],
-    ['Decision Support', 'KPIs, charts and auto-recommendations below.'],
+    ['Lead Capture', 'Quote forms collect structured customer and property details.'],
+    ['Central Records', 'Every request is stored in one secure, searchable system.'],
+    ['Live Reporting', 'Totals, averages and package demand update instantly.'],
+    ['Customer History', 'Contact details, notes and status in a single view.'],
+    ['Team Workflow', 'Requests move through New → In Progress → Completed.'],
+    ['Decision Support', 'Trends and recommendations help managers plan capacity.'],
   ];
 
   return (
@@ -30,7 +30,7 @@ export default function MisInsights({ quotes }: { quotes: QuoteRequest[] }) {
         </ul>
       </div>
       <div className="bg-background-50 rounded-xl border border-background-200 p-5">
-        <h2 className="font-bold text-primary-900 mb-3">MIS Concepts Demonstrated</h2>
+        <h2 className="font-bold text-primary-900 mb-3">What this dashboard tracks</h2>
         <dl className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
           {concepts.map(([t, d]) => (
             <div key={t} className="bg-background-100 rounded-lg p-3"><dt className="font-semibold text-primary-800">{t}</dt><dd className="text-foreground-600">{d}</dd></div>
